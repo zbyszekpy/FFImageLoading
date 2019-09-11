@@ -101,8 +101,6 @@
   </ItemGroup>
   <Import Project="..\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Svg.Forms.Shared\FFImageLoading.Svg.Forms.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\..\packages\Xamarin.Forms.3.6.0.344457\build\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.3.6.0.344457\build\Xamarin.Forms.targets')" />
-  <Import Project="..\..\packages\Xamarin.Forms.3.6.0.344457\build\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.3.6.0.344457\build\Xamarin.Forms.props')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
