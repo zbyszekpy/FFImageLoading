@@ -183,7 +183,7 @@ namespace FFImageLoading.Helpers.Gif
 
 		public void Clear()
 		{
-			if (_previousImage != default)
+			if (_previousImage != null)
 			{
 				Release(_previousImage);
 			}
