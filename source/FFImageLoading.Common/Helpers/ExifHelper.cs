@@ -7,7 +7,9 @@ using FFImageLoading.Helpers.Exif;
 
 namespace FFImageLoading.Helpers
 {
-    internal static class ExifHelper
+	using Directory = FFImageLoading.Helpers.Exif.Directory;
+
+	internal static class ExifHelper
     {
         //const int MOTOROLA_TIFF_MAGIC_NUMBER = 0x4D4D;
         //const int INTEL_TIFF_MAGIC_NUMBER = 0x4949;
