@@ -42,7 +42,7 @@ namespace FFImageLoading.Forms.Handlers
 				parameters = ImageService.Instance.LoadEmbeddedResource(binding.Path);
 			}
 
-			if (parameters != default)
+			if (parameters != null)
 			{
 				// Enable vector image source
 				if (imageSource is IVectorImageSource vect)
@@ -66,7 +66,7 @@ namespace FFImageLoading.Forms.Handlers
 
 				var task = GetImageLoaderTask(parameters, imageView);
 
-				if (cancellationToken != default)
+				if (cancellationToken != null)
 					cancellationToken.Register(() =>
 					{
 						try
