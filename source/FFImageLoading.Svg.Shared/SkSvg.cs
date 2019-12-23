@@ -788,7 +788,7 @@ namespace FFImageLoading.Svg.Platform
 
 		private void ReadFontAttributes(Dictionary<string, string> style, ref SKPaint stroke, ref SKPaint fill)
 		{
-			var fontFamily = fill.Typeface?.FamilyName;// added in 1.68 ?? SKTypeface.Default.FamilyName;
+			var fontFamily = fill.Typeface?.FamilyName ?? SKTypeface.Default.FamilyName;
 			var fontStyle = fill.Typeface?.FontSlant ?? SKFontStyleSlant.Upright;
 			var fontWeight = (SKFontStyleWeight?)fill.Typeface?.FontWeight ?? SKFontStyleWeight.Normal;
 			var fontWidth = (SKFontStyleWidth?)fill.Typeface?.FontWidth ?? SKFontStyleWidth.Normal;
